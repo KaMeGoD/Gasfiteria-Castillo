@@ -375,6 +375,11 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/glidejs__glide@^3.6.5":
+  version "3.6.5"
+  resolved "https://registry.npmjs.org/@types/glidejs__glide/-/glidejs__glide-3.6.5.tgz"
+  integrity sha512-OUjzveIu+tiK5VvyPh6jTBJ/vH6+vC+XWzC2KJzpgUW8uancMJBa7R+BlXuvtSPdLw/pQForVasy0fm1D7JWOQ==
+
 "@types/json-schema@^7.0.12":
   version "7.0.15"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz"
