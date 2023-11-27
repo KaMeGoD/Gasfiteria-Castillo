@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('../src/css/Globales.css');/* Gobales */
+@import url('../src/css/Header.css');/* Header */
+@import url('../src/css/Hero.css');/* Hero */
+@import url('../src/css/Formulario.css');/* Formulario */
+@import url('../src/css/Servicios.css');/* Servicios */
+@import url('../src/css/Cobertura.css');/* Cobertura */
+@import url('../src/css/Testimonios.css');/* Testimonios */
+@import url('../src/css/Footers.css');/* Footer */
+
+@import url('../src/css/mainServicios.css');
+
+
+
+:root{
+  --ColorPrincipal: #0C6280;
+  --ColorOscuro: #1D1D1B;
+  --ColorPlomo: #8a8d8f;
+  --colorPlomoSuave: #D9D9D9;
+  --ColorBlanco: #EEEEEE;
+  --ColorVerde: #2AC246;
+
+  --FuentePrincipal: 'Inter', sans-serif;
+}
+
+
+html{
+  font-size: 62,5%;
+  box-sizing: border-box;
+  font-family: var(--FuentePrincipal);
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+.wsp-flotante img{
+  width: 70px;
+  height: 70px;
+}
+.wsp-flotante{
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 1;
+}
+
+.fijo{
+  position: fixed;
+  width: 100%;
+  box-shadow: .1rem .2rem .3rem #333;
+  z-index: 2;
+  top: 0;
+}
+
+.body-scroll{
+  padding-top: 8.6rem;
+}
+
+a{
+  display: contents;
+}
+
+.body{
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  .wsp-flotante img{
+    width: 50px;
+    height: 50px;
+  }
+}

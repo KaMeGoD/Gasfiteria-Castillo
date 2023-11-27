@@ -1,0 +1,150 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid var(--ColorPrincipal);
+  background-color: white;
+}
+
+header .logo {
+  width: 12rem;
+  height: 5rem;
+}
+
+header .nav {
+  display: flex;
+  align-items: end;
+}
+
+header .nav ul {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+header .nav ul li a {
+  padding-bottom: 0.8rem;
+}
+
+header .menu-hamburguesa {
+  display: none;
+}
+
+.navegacion-movil{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .nav {
+    display: none;
+  }
+  header{
+    align-items: center;
+  }
+  header .menu-hamburguesa {
+    display: inline-block;
+  }
+  .menu-hamburguesa {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+
+    transform: scale(.7);
+    border: none;
+    background: transparent;
+  }
+
+  span {
+    background: #201f1f;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.7s, width 0.5s;
+  }
+
+  .hamburgesa1 {
+    transform: translate(-50%, -15px);
+  }
+
+  .hamburgesa3 {
+    transform: translate(-50%, 10px);
+  }
+
+  /* PARTE DE JAVASCRIPT */
+  .activo .hamburgesa1{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .activo .hamburgesa3 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .activo .hamburgesa2 {
+    width: 0;
+  }
+
+  header .nav__movil-activo{
+    display: inline-block;
+    background-color: var(--ColorPrincipal);
+    z-index: 5;
+    width: 60%;
+    height: 100vh;
+    color: var(--ColorBlanco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+
+  .navegacion-movil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-movil ul{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 0;
+  }
+  .nav-movil ul li a{
+    color: var(--ColorBlanco);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .btn-cierre-menu{
+    background-color: var(--ColorPrincipal);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: var(--ColorBlanco);
+    margin-top: 5rem;
+    border: 1px solid var(--ColorBlanco);
+  }
+
+  .box-btncierre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacion-movil{
+    display: none;
+  }
+}

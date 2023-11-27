@@ -1,0 +1,43 @@
+.mainServicios{
+  margin: 3rem 5rem;
+}
+
+.mainServicios h3{
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainContenido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.mainContenido p{
+  width: 40rem;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.volverImagen{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainContenido{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mainContenido iframe{
+    max-width: 400px;
+  }
+
+  .mainContenido p{
+    text-align: center;
+    width: 20rem;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+  }
+}

@@ -1,0 +1,166 @@
+.footer{
+  margin-top: 10rem;
+  background-color: var(--ColorPrincipal);
+  color: var(--ColorBlanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9rem;
+  z-index: 5;
+}
+.footer .logoFooter{
+  width: 15rem;
+  height: 10rem;
+  padding-right: 2rem;
+  border-right: 1px solid var(--ColorPlomo);
+}
+
+footer nav{
+  margin-left: 2rem;
+  border-right: 1px solid var(--ColorPlomo);
+  padding-right: 1rem;
+}
+
+.footer p{
+  font-size: 1.3rem;
+} 
+.footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+.arrowDwon{
+  width: 1rem;
+  height: 1rem;
+  rotate: -90deg;
+  margin-right: .5rem;
+}
+
+.footer nav ul li a{
+  color: var(--ColorBlanco);
+  font-size: 1rem;
+}
+
+.horariosyRRSS{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.horariosyRRSS .horarios{
+  font-size: 1rem;
+}
+.horariosyRRSS .horarios .horario{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* .horariosyRRSS .RRSS{
+  
+} */
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.icoContacto{
+  display: flex;
+  gap: 1rem;
+}
+.icoContacto img{
+  width: 22px;
+  height: 22px;
+}
+.icoContacto p{
+  font-size: 1rem;
+}
+
+.piefinal{
+  background-color: var(--ColorPrincipal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ColorBlanco);
+  border-top: 1px solid var(--ColorPlomo);
+  padding: 1rem;
+  text-align: center;
+}
+
+.piefinal .jcdevs{
+  color: var(--ColorBlanco);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .footer .logoFooter{
+    width: 15rem;
+    height: 15rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--ColorPlomo);
+    border-right: none;
+    display: flex;
+    padding-right: 0;
+  }
+  .footer nav{
+    display: none;
+  }
+
+  .horariosyRRSS .horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--ColorPlomo);
+
+  }
+
+  .horariosyRRSS .horarios p{
+    font-size: 2rem;
+  }
+  .horariosyRRSS .horarios .horario{
+    font-size: 1.5rem;
+  }
+
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  .contacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contacto p{
+    font-size: 2rem;
+    padding: 2rem auto;
+  }
+  .icoContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .icoContacto img{
+    width: 42px;
+    height: 42px;
+  }
+  .icoContacto p{
+    font-size: 1.5rem;
+  }
+} 

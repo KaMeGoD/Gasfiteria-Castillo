@@ -1,0 +1,134 @@
+.formContacto{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: -2rem auto;
+  margin-bottom: 2rem;
+  position: relative;
+} 
+   /* formulario texto */
+.formContacto .textContacto {
+  background-color: var(--ColorPrincipal);
+  padding: 3rem;
+  text-align: center;
+  color: var(--ColorBlanco);
+  border-radius: .5rem 0  0 .5rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+    /* formulario */
+.formContacto .formularioContacto{
+  background-color: var(--colorPlomoSuave);
+  padding: 4rem 2rem;
+  border-radius: 0 .5rem .5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formularioContacto .titulo-form{
+  font-size: 2rem;
+  color: var(--ColorPrincipal);
+  text-align: end;
+}
+
+.formularioContacto .form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formularioContacto input, .formularioContacto textarea, .formularioContacto select{
+  border-radius: .2rem;
+  border: none;
+  padding: .5rem 1rem ;
+  color: var(--ColorOscuro);
+  
+}
+.formularioContacto textarea{
+  resize:none;
+  width: 100%;
+  height: 7rem;
+}
+.formularioContacto .ph-final{
+  text-align: end;
+}
+.cod-num{
+  background-color: white;
+  font-weight: 700;
+  color: var(--ColorPrincipal);
+  border-right: 1px solid var(--ColorPlomo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.formularioContacto .btnSubmit{
+  background-color: var(--ColorPrincipal);
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  border: none;
+  color: var(--ColorBlanco);
+  font-weight: 400;
+  width: 10rem;
+  cursor: pointer;
+}
+.btn{
+  justify-content: end;
+}
+
+.opcion-default{
+  text-align: center;
+  align-items: center;
+  color: var(--ColorPlomo);
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .formContacto{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .formContacto .textContacto {
+    border-radius: .5rem .5rem 0rem 0;
+  }
+  .formContacto .formularioContacto{
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .formularioContacto input, .formularioContacto textarea, .formularioContacto select{
+    width: 100%;
+  }
+
+  .formularioContacto .titulo-form{
+    text-align: center;
+  }
+
+  .formularioContacto .ph-final{
+    text-align: center;
+  }
+  .formularioContacto .region{
+    text-align: center;
+  }
+
+  .btn{
+    justify-content: center;
+    height: 4rem;
+  }
+
+  .divInput{
+    flex-direction: column;
+  }
+}
