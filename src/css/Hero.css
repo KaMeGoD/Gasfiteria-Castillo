@@ -41,7 +41,7 @@
   font-size: 3.3rem;
 }
 
-.btnHero{
+.hero_texto .btnHero{
   width: 30rem;
   background-color: var(--ColorPrincipal);
   display: flex;
