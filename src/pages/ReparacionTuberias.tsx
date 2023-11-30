@@ -1,28 +1,25 @@
 import { Footer } from "../components/Footer"
-import { Header } from "../components/Header"
+import { HeaderServicios } from "../components/HeaderServicios"
 import LogoSVG from '../assets/logo.svg';
-import WSPFlotante from '../assets/pngwing.webp';
+import Volver from '../assets/volver.svg';
 import { MainServicios } from "../components/MainServicios";
 
 export const ReparacionTuberias: React.FC = () =>{
   return(
     <>
-    <a className="wsp-flotante" href='https://wa.me/56965644328' target="_blank">
-      <img width="1280" height="720" src={WSPFlotante} alt="whattsapp" />
-    </a>
-    <Header
-      logo={LogoSVG}
-      altLogo="Logo"
-      nav1="Inicio"
-      nav2="Servicios"
-      nav3="Testimonios"
-    />
-    <MainServicios 
-        tituloServicio="Servicios 24 / 7"
-        linkVideo="https://www.youtube.com/embed/KkU7_ZmvdlA?si=lF0A3emx1WLNS0to"
-        parrafo=""
-      />
-    <Footer/>
-  </>
+        <HeaderServicios
+          logo={LogoSVG}
+          altLogo="Logo"
+          volver="Volver"
+          volverImg={Volver}
+        />
+
+        <MainServicios
+          tituloServicio="Reparacion de Tuberias"
+          linkVideo="https://www.youtube.com/embed/XGnEOUYxWxg?si=m2ZY1NZuy250Bxpo"
+          parrafo="Con el tiempo, las tuberías en tu hogar u oficina pueden sufrir desgaste, resultando en grietas o incluso roturas. En Castillo Gasfitería, nos especializamos en la reparación de diversos tipos de tuberías, como PEX, PPR, hierro fundido, cobre, PVC hidráulico y sanitario. Nuestros expertos están equipados para abordar problemas de manera específica, brindando soluciones efectivas que restauran la integridad de las tuberías y aseguran el funcionamiento continuo de tus sistemas de agua y desagüe. Garantizamos servicios de calidad que prolongan la vida útil de tus instalaciones hidráulicas."
+        />
+        <Footer />
+      </>
 )
 }

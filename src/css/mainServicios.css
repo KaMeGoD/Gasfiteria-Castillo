@@ -20,7 +20,7 @@
   letter-spacing: 3px;
 }
 
-.volverImagen{
+.nav-HeaderServicios .volverImagen{
   display: none;
 }
 
@@ -39,5 +39,14 @@
     width: 20rem;
     font-size: 1.3rem;
     letter-spacing: 3px;
+  }
+  .navServicios .nav-HeaderServicios{
+    display: contents;
+  }
+  .nav-HeaderServicios .volverImagen{
+    display: inline-block;
+  }
+  .nav-HeaderServicios .volverPalabra{
+    display: none;
   }
 }

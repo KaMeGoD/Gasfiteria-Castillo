@@ -10,9 +10,6 @@ import Tubos from "../assets/Servicios/tuberia.svg";
 import Atencion from "../assets/Servicios/24-7-180x180-1.svg";
 import Plomero from "../assets/Servicios/plomero-180x180-1.svg";
 
-
-
-
 export const Servicios: React.FC = () => {
   return (
     <>
@@ -71,23 +68,21 @@ export const Servicios: React.FC = () => {
           />
         </Link>
 
-        <Link to="/atencion">
           <CardServicios
             imgCard={Atencion}
             altImgCard="24-7"
             tituloCard="Atención de Emergencias 24/7"
             parrafoCard="Estamos disponibles las 24 horas del día, los 7 días de la semana, durante todo el año, para atender cualquier urgencia que pueda surgir en su fontanería, como roturas de cañerías, fugas de agua, cambio de llaves, reparación de W.C., duchas, lavaplatos y grifería en general. No dude en ponerse en contacto con nosotros."
           />
-        </Link>
         
-        <Link to="/otrosServicios">
+        
+        
           <CardServicios
             imgCard={Plomero}
             altImgCard="fontanero"
             tituloCard="Otros Servicios de Gasfitería"
             parrafoCard="En caso de enfrentar una emergencia o cualquier otro problema, no dude en comunicarse con nosotros a través de correo electrónico, WhatsApp o una llamada directa. Por favor, proporcione los detalles necesarios para que podamos brindarle asistencia."
           />
-        </Link>
       </div>
     </>
   )

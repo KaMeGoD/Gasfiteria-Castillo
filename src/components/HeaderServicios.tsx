@@ -16,9 +16,9 @@ export const HeaderServicios: React.FC<PropsHeader> = ({ logo, altLogo, volver, 
           <img className="logo"  src={logo} alt={altLogo} loading="lazy"/>
         </div>
 
-        <div>
-          <Link to="/home">
-          <nav className="nav">
+        <div className="navServicios">
+          <Link to="/">
+          <nav className="nav nav-HeaderServicios">
           <ul>
             <li><a className="hvr-underline-from-center volverPalabra">{volver}</a></li>
             <li><img className="volverImagen" src={volverImg} alt="volver" /></li>

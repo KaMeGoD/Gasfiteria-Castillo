@@ -1,5 +1,6 @@
 import { Header } from "../components/Header"
 import LogoSVG from '../assets/logo.svg';
+import LogoMovil from '../assets/logo-footer.png';
 import WSPFlotante from '../assets/pngwing.webp';
 import { Contacto } from "../components/Contacto";
 import { Servicios } from "../components/Servicios";
@@ -16,16 +17,15 @@ export const Home: React.FC = () => {
         </a>
       </div>
 
-
       <Header
         logo={LogoSVG}
         altLogo="Logo"
         nav1="Inicio"
         nav2="Servicios"
         nav3="Testimonios"
+        logoMovil={LogoMovil}
       />
       <Contacto />
-
 
       <main>
         <hr id="servicios" />

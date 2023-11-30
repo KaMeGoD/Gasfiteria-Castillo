@@ -6,7 +6,6 @@ import { MainServicios } from "../components/MainServicios";
 
 export const Destapes: React.FC = () => {
   return (
-    <>
       <>
         <HeaderServicios 
           logo={LogoSVG} 
@@ -23,6 +22,5 @@ export const Destapes: React.FC = () => {
         />
         <Footer />
       </>
-    </>
   )
 }

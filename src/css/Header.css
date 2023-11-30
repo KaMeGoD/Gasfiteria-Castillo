@@ -11,6 +11,10 @@ header .logo {
   width: 12rem;
   height: 5rem;
 }
+header .logo {
+  width: 12rem;
+  height: 5rem;
+}
 
 header .nav {
   display: flex;

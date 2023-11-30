@@ -1,28 +1,26 @@
 import { Footer } from "../components/Footer"
-import { Header } from "../components/Header"
+import { HeaderServicios } from "../components/HeaderServicios"
 import LogoSVG from '../assets/logo.svg';
-import WSPFlotante from '../assets/pngwing.webp';
+import Volver from '../assets/volver.svg';
 import { MainServicios } from "../components/MainServicios";
 
 export const Hydrojet: React.FC = () =>{
   return(
     <>
-      <a className="wsp-flotante" href='https://wa.me/56965644328' target="_blank">
-        <img width="1280" height="720" src={WSPFlotante} alt="whattsapp" />
-      </a>
-      <Header
-        logo={LogoSVG}
-        altLogo="Logo"
-        nav1="Inicio"
-        nav2="Servicios"
-        nav3="Testimonios"
-      />
-      <MainServicios 
-        tituloServicio="Servicios 24 / 7"
-        linkVideo="https://www.youtube.com/embed/KkU7_ZmvdlA?si=lF0A3emx1WLNS0to"
-        parrafo=""
-      />
-      <Footer/>
-    </>
+        <HeaderServicios
+          logo={LogoSVG}
+          altLogo="Logo"
+          volver="Volver"
+          volverImg={Volver}
+        />
+
+        <MainServicios
+          tituloServicio="Hidrojet"
+          linkVideo="https://www.youtube.com/embed/UV4iEWQGFuk?si=JNN0nNzZKWdScsMC"
+          parrafo="
+          En Castillo Gasfitería, nos destacamos por la implementación del sistema Hidrojet, una tecnología eficiente para la limpieza de conductos tanto verticales como horizontales en edificios y comunidades. Este sistema, conocido como hidrolavadoras o hidrolimpiadoras, ofrece diversas aplicaciones, siendo su función principal la limpieza profunda de tuberías, cañerías, drenajes y sistemas de alcantarillado. Su potencia y versatilidad nos permiten abordar con eficacia una amplia gama de obstrucciones y residuos, garantizando un funcionamiento óptimo de los sistemas hidráulicos y sanitarios en tu entorno residencial o comercial."
+        />
+        <Footer />
+      </>
 )
 }

@@ -1,28 +1,25 @@
 import { Footer } from "../components/Footer"
-import { Header } from "../components/Header"
+import { HeaderServicios } from "../components/HeaderServicios"
 import LogoSVG from '../assets/logo.svg';
-import WSPFlotante from '../assets/pngwing.webp';
+import Volver from '../assets/volver.svg';
 import { MainServicios } from "../components/MainServicios";
 
-export const CambiosGasfiteriayArtefactos: React.FC = () =>{
-  return(
-    <>
-      <a className="wsp-flotante" href='https://wa.me/56965644328' target="_blank">
-        <img width="1280" height="720" src={WSPFlotante} alt="whattsapp" />
-      </a>
-      <Header
-        logo={LogoSVG}
-        altLogo="Logo"
-        nav1="Inicio"
-        nav2="Servicios"
-        nav3="Testimonios"
-      />
-      <MainServicios 
-        tituloServicio="Servicios 24 / 7"
-        linkVideo="https://www.youtube.com/embed/KkU7_ZmvdlA?si=lF0A3emx1WLNS0to"
-        parrafo=""
-      />
-      <Footer/>
-    </>
-)
+export const CambiosGasfiteriayArtefactos: React.FC = () => {
+  return (
+      <>
+        <HeaderServicios
+          logo={LogoSVG}
+          altLogo="Logo"
+          volver="Volver"
+          volverImg={Volver}
+        />
+
+        <MainServicios
+          tituloServicio="Cambios de Gasfiteria y Artefactos"
+          linkVideo="https://www.youtube.com/embed/XGnEOUYxWxg?si=m2ZY1NZuy250Bxpo"
+          parrafo="¿Está considerando actualizar elementos en su baño o cocina, como grifos, inodoros, tuberías, lavamanos o lavavajillas? En Castillo Gasfitería, nos especializamos en realizar estos trabajos con velocidad, eficacia y transparencia. Contamos con expertos que se encargan de todas las facetas de la actualización, desde la instalación hasta la optimización del rendimiento. Nuestra atención meticulosa y compromiso con la satisfacción del cliente aseguran resultados de calidad, transformando su espacio de manera profesional y eficiente para satisfacer sus necesidades y gustos específicos."
+        />
+        <Footer />
+      </>
+  )
 }

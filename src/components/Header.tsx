@@ -3,13 +3,14 @@ import { useEffect } from "react";
 
 interface PropsHeader {
   logo: string;
+  logoMovil: string;
   altLogo: string;
   nav1: string;
   nav2: string;
   nav3: string;
 }
 
-export const Header: React.FC<PropsHeader> = ({ logo, altLogo, nav1, nav2, nav3 }) => {
+export const Header: React.FC<PropsHeader> = ({ logo, altLogo, nav1, nav2, nav3, logoMovil }) => {
 
   useEffect(() => {
     const navegacionFija = () => {
@@ -78,7 +79,7 @@ export const Header: React.FC<PropsHeader> = ({ logo, altLogo, nav1, nav2, nav3 
 
         <div className="navegacion-movil">
           <div className="logo logo_nav-movil" id="inicio">
-            <img className="logo" src={logo} alt={altLogo} />
+            <img className="logoMovil" src={logoMovil} alt={altLogo} />
           </div>
           <nav className="nav-movil">
             <ul>
