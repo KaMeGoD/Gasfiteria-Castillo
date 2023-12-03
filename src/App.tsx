@@ -4,8 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 import 'normalize.css';
-import './App.css';
 import 'hover.css';
+import '../src/App.css'
 
 
 import { Home } from "./pages/Home.tsx";
