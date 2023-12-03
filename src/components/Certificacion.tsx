@@ -12,7 +12,7 @@ export const Certificacion: React.FC<PropsCertificacion> = ({ logoCertificacion,
         <div className="certificacionCuerpo">
           <div className="selloyQR">
             <img width="1280" height="720" src={logoCertificacion} alt="logo Certificacion" />
-            <img width="1280" height="720" src={qrCertificacion} alt="qr Certificacion" />
+            <img width="160" height="160" src={qrCertificacion} alt="qr Certificacion" />
           </div>
           <div className="textoCertificacion">
             <p>{textoCertificacion}</p>
