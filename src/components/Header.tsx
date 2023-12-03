@@ -10,7 +10,7 @@ interface PropsHeader {
   nav3: string;
 }
 
-export const Header: React.FC<PropsHeader> = ({ logo, altLogo, nav1, nav2, nav3, logoMovil }) => {
+export const Header: React.FC<PropsHeader> = ({ logo, altLogo, nav1, nav2, nav3, logoMovil}) => {
 
   useEffect(() => {
     const navegacionFija = () => {

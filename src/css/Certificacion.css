@@ -1,0 +1,37 @@
+
+.certificacionCuerpo{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0 15rem;
+}
+.selloyQR{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border: 2px solid #002A5E;
+  border-radius: 2rem;
+}
+.selloyQR img{
+  width: 10rem;
+  height: 10rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .certificacion{
+    margin-top: 5rem;
+  }
+  .certificacion .tituloCertificacion{
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  .certificacionCuerpo{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .certificacion .textoCertificacion p{
+    font-size: 25px;
+    text-align: center;
+  }
+}
