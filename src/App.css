@@ -2,14 +2,13 @@
 @import url('../src/css/Globales.css');/* Gobales */
 @import url('../src/css/Header.css');/* Header */
 @import url('../src/css/Hero.css');/* Hero */
-@import url('../src/css/Certificacion.css');
 @import url('../src/css/Formulario.css');/* Formulario */
 @import url('../src/css/Servicios.css');/* Servicios */
 @import url('../src/css/Cobertura.css');/* Cobertura */
 @import url('../src/css/Testimonios.css');/* Testimonios */
 @import url('../src/css/Footers.css');/* Footer */
-
 @import url('../src/css/mainServicios.css');
+@import url('../src/css/Certificacion.css');
 
 
 

@@ -3,9 +3,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import 'normalize.css';
+import  'normalize.css';
 import 'hover.css';
-import '../src/App.css'
+import '../src/App.css';
 
 
 import { Home } from "./pages/Home.tsx";
